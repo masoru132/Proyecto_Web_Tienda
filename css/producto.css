@@ -1,0 +1,25 @@
+.contenedor-productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto {
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 200px; 
+    border: 1px solid black;
+    transition: transform 0.3s ease;
+}
+
+.producto img{
+    width: 100%;
+}
+
+.producto img:hover {
+    filter: blur(6px);
+    transition: 0.5s;
+}
