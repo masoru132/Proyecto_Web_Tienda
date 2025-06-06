@@ -1,0 +1,50 @@
+@import url(header.css);
+@import url(fonts.css);
+@import url(cabecera.css);
+@import url(footer.css);
+
+:root {
+    padding: 0;
+    margin: 0;
+    background-color: #FFFAEC;
+}
+
+body {
+    font-family: "cuerpo";
+    box-sizing: border-box;
+    overflow-x: hidden
+}
+
+/*CURSOS*/
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.curso {
+    width: 25%;
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.curso a img {
+    width: 100%;
+    height: auto;
+}
+
+.curso a img:hover{
+    filter: blur(10px);
+    transition: 0.3s;
+}
+
+.curso p{
+    font-size: 18px;
+}
+

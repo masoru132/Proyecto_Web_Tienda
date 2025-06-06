@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "titulo";
+    src: url(../multimedia/fonts/LeagueSpartan-2.220/static/OTF/LeagueSpartan-Black.otf);
+}
+
+@font-face {
+    font-family: "cuerpo";
+    src: url(../multimedia/fonts/Work_Sans/static/WorkSans-Light.ttf);
+}

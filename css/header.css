@@ -1,0 +1,99 @@
+@import url(fonts.css);
+
+
+header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    font-family: "cuerpo";
+}
+
+header div img {
+    width: 100px;
+    margin-left: 100px;
+}
+
+header nav {
+    display: flex;
+    justify-content: left;
+
+}
+
+header nav button {
+    font-size: 16px;
+    background: transparent;
+    border-width: 2px;
+    border-style: ridge;
+    position: relative;
+    margin: 1em;
+    display: inline-block;
+    padding: 0.5em 1em;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+button:before,
+button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    border-style: ridge;
+    width: 1em;
+    height: 1em;
+    transition: all 0.3s ease-in-out
+}
+
+button:before {
+    top: -6px;
+    left: -6px;
+    border-width: 2px 0 0 2px;
+    z-index: 5;
+}
+
+button:after {
+    bottom: -6px;
+    right: -6px;
+    border-width: 0 2px 2px 0;
+}
+
+button:hover:before,
+button:hover:after {
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+}
+
+.panel {
+    max-width: 960px;
+    position: relative;
+    margin: auto;
+}
+
+.borderless button {
+    border-color: rgba(0, 0, 0, 0)
+}
+
+.borderless button:hover {
+
+    border-color: rgb(110, 110, 110);
+    background-color: transparent;
+}
+
+.borderless button:before,
+.borderless button:after {
+    border-color: transparent;
+}
+
+.borderless button:hover:before,
+.borderless button:hover:after {
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    border-color: rgb(110, 110, 110);
+}
+
+.icon img {
+    width: 20px;
+    margin-right: 70px;
+}

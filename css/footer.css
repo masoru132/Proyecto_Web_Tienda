@@ -1,0 +1,58 @@
+footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-top: 1px solid black;
+}
+
+footer h3{
+    font-family: "titulo";
+}
+
+.footer-links {
+  width: 30%;
+  border-right: 1px solid black;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: black;
+  position: relative; 
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #000;
+  transition: width 0.3s ease-in-out;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+.footer-info {
+    width: 30%;
+    border-right: 1px solid black;
+}
+
+.footer-logo {
+    position: relative;
+    width: 40%;
+}
+
+.footer-logo img {
+    width: 170px;
+}
+
+.footer-logo  {
+    font-size: 30px;
+    bottom: 20px;
+}

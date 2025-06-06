@@ -1,0 +1,49 @@
+@import url(header.css);
+@import url(fonts.css);
+@import url(cabecera.css);
+@import url(footer.css);
+
+:root {
+    padding: 0;
+    margin: 0;
+    background-color: #FFFAEC;
+}
+
+body {
+    font-family: "cuerpo";
+    box-sizing: border-box;
+    overflow-x: hidden
+}
+
+.texto {
+    width: 98%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5;
+    border-bottom: 1px solid black;
+}
+
+.contenido {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;       
+    justify-content: center; 
+    gap: 1rem;
+}
+
+.carta {
+    width: 190px;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.5vmin solid #05060f;
+    box-shadow: 0.4rem 0.4rem #05060f;
+    overflow: hidden;
+    color: black;
+    text-align: center;
+}
+
+.carta:hover{
+    background-color: #cdf081;
+}

@@ -1,0 +1,15 @@
+.cabecera {
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background: repeating-linear-gradient(45deg, #00000048, #00000048 2px, #FFFAEC 2px, #FFFAEC 20px);
+}
+
+.cabecera h1 {
+    text-align: center;
+    font-family: "titulo";
+    background-color: #FFFAEC;
+    padding: 9px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}

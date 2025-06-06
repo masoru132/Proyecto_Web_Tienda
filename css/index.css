@@ -1,0 +1,229 @@
+@import url(header.css);
+@import url(fonts.css);
+@import url(footer.css);
+
+:root {
+    padding: 0;
+    margin: 0;
+    background-color: #FFFAEC;
+}
+
+body {
+    font-family: "cuerpo";
+    box-sizing: border-box;
+    overflow-x: hidden
+}
+
+/*CABECERA*/
+
+.cabecera {
+    text-align: center;
+    border-top: 1px ridge black;
+    width: 100%;
+    justify-content: center;
+}
+
+.cabecera p {
+    font-family: "titulo";
+    font-size: 50px;
+}
+
+.cabecera video {
+    width: 63%;
+    border-radius: 6px;
+    border: 2px ridge black;
+    padding: 11px;
+}
+
+/*CONTENIDO 1*/
+
+.contenido1 {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenido1Imagenes {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 800px;
+    margin-left: 110px;
+}
+
+.contenido1Imagenes article {
+    width: 50%;
+}
+
+.contenido1Imagenes article img {
+    width: 80%;
+    border: 2px ridge black;
+    border-radius: 6px;
+    padding: 11px;
+}
+
+.img1 {
+    position: relative;
+    right: 70px;
+}
+
+.img2 {
+    position: relative;
+    left: 94px;
+    bottom: 80px;
+}
+
+.contenido1Texto {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    width: 50%;
+    margin-right: 190px;
+}
+
+.contenido1Texto p {
+    text-align: left;
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+/*CONTENIDO 2*/
+
+.menuAlternativo {
+    /*background-image: url(../multimedia/img/index/background_div.png);
+    background-repeat: no-repeat;*/
+    width: 90%;
+    aspect-ratio: 3/2;
+    padding: 7px;
+    margin: auto;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    position: static;
+}
+
+.menuAlternativo section {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuAlternativo section img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    border-radius: 6px;
+    border: 2px solid black;
+    padding: 11px;
+}
+
+.menuAlternativo button {
+    padding: 10px 20px;
+    font-family: "titulo";
+    font-size: 22px;
+    text-align: center;
+    color: black;
+    background-color: #FFFAEC;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: -43px;
+
+}
+
+.menuAlternativo button:hover {
+    background-color: #cdf081;
+}
+
+/*CONTENIDO 3*/
+
+.favoritos {
+    margin: auto;
+    overflow: hidden;
+}
+
+.favoritos h2 {
+    font-family: "titulo";
+    font-size: 40px;
+    text-align: center;
+}
+
+.favoritos article {
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    overflow: hidden;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.cinta-texto {
+    display: flex;
+    animation: moverTexto 15s linear infinite;
+}
+
+.cinta-texto p {
+    white-space: nowrap;
+    padding-right: 5px;
+    font-size: 25px;
+}
+
+@keyframes moverTexto {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/*CONTENIDO 4*/
+
+.favoritos-img {
+    width: 80%;
+    height: 450px;
+    aspect-ratio: 3/2;
+    padding: 7px;
+    margin: auto;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.favoritos-img section {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    --s: 50px;
+    /* marco de esquinas*/
+    border: 3px solid black;
+    height: 250px;
+    width: 350px;
+    mask:
+        conic-gradient(#000 0 0) content-box,
+        conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s));
+}
+
+.favoritos-img section img {
+    width: 90%;
+    padding: 11px;
+    position: relative;
+    bottom: 45px;
+    left: 2px;
+}
+
+.favoritos-img section img:hover {
+    filter: blur(10px);
+    transition: 0.3s;
+}
