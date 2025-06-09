@@ -5,7 +5,6 @@
     display: flex;
     margin: 20px auto;
     gap: 5px;
-    font-size: 25px;
 }
 
 .option {
@@ -34,7 +33,7 @@
 }
 
 .span {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .input:checked+.btn {
