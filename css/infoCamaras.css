@@ -1,0 +1,85 @@
+@import url(header.css);
+@import url(fonts.css);
+@import url(cabecera.css);
+@import url(footer.css);
+@import url(producto.css);
+
+:root {
+    padding: 0;
+    margin: 0;
+    background-color: #FFFAEC;
+}
+
+body {
+    font-family: "cuerpo";
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-img {
+    width: 50%;
+    justify-content: center;
+}
+
+.info-img img {
+    width: 80%;
+}
+
+.info-text {
+    width: 50%;
+}
+
+.info-text h3,
+h2 {
+    font-family: "titulo";
+}
+
+
+.info-text section {
+    width: 90%;
+    margin: auto;
+}
+
+.info-text input {
+    text-align: center;
+    width: 10%;
+    padding: 8px;
+    font-size: 17px;
+    border: 2px solid black;
+    border-radius: 8px;
+    outline: none;
+    position: relative;
+    top: 4px; 
+}
+
+
+.info-text button {
+    padding: 10px 20px;
+    font-family: "titulo";
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    background-color: #FFFAEC;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: -43px;
+
+}
+
+.info-text button:hover{
+    background-color: #cdf081;
+}
